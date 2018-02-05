@@ -1,0 +1,2360 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" 
+ xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--FIX FOR OUTLOOK DPI SCALING-->
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width">
+<!--[if !mso]><!-- -->
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<!--<![endif]-->
+<title>Frequently Used Modules</title>
+
+<style type="text/css">
+	
+/* WEB FONTS */	
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,500,600|Rokkitt:800');
+
+[style*="Montserrat-Light"] {
+  font-family: 'Montserrat', 'Century Gothic', CenturyGothic, Arial, sans-serif !important;
+  font-weight: 200 !important;
+}
+/* use style="font-family:Arial, sans-serif, 'Montserrat-Light';" */
+
+[style*="Montserrat-Book"] {
+  font-family: 'Montserrat', 'Century Gothic', CenturyGothic, Arial, sans-serif !important;
+  font-weight: 300 !important;
+}
+/* use style="font-family:Arial, sans-serif, 'Montserrat-Book';" */
+
+[style*="Montserrat-Medium"] {
+  font-family: 'Montserrat', 'Century Gothic', CenturyGothic, Arial, sans-serif !important;
+  font-weight: 500 !important;
+}
+/* use style="font-family:Arial, sans-serif, 'Montserrat-Medium';" */
+
+[style*="Montserrat-Bold"] {
+  font-family: 'Montserrat', 'Century Gothic', CenturyGothic, Arial, sans-serif !important;
+  font-weight: 600 !important;
+}
+/* use style="font-family:Arial, sans-serif, 'Montserrat-Bold';" */
+
+
+[style*="Rokkitt-ExtraBold"] {
+  font-family: 'Rokkitt', Gill Sans, Gill Sans MT, Arial, sans-serif !important;
+  font-weight: 800 !important;
+}
+/* use style="font-family:Arial, sans-serif, 'Rokkitt-ExtraBold';" */
+
+
+@font-face {
+  font-family: 'TiemposHeadline-Bold';
+  src: url('http://media.4at5.net/email_domains/bbb/160900/fonts/TiemposHeadlineWeb-Bold.eot') format('embedded-opentype'),
+  url('http://media.4at5.net/email_domains/bbb/160900/fonts/TiemposHeadlineWeb-Bold.woff') format('woff'),
+  url('http://media.4at5.net/email_domains/bbb/160900/fonts/TiemposHeadlineWeb-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+[style*="TiemposHeadline-Bold"] {
+  font-family: 'TiemposHeadline-Bold', 'Times New Roman', serif !important;
+}
+/* use style="font-family:Arial, sans-serif, 'TiemposHeadline-Bold';" */
+
+
+@font-face {
+  font-family: 'TiemposHeadline-Medium';
+  src: url('http://media.4at5.net/email_domains/bbb/160900/fonts/TiemposHeadlineWeb-Medium.eot') format('embedded-opentype'),
+  url('http://media.4at5.net/email_domains/bbb/160900/fonts/TiemposHeadlineWeb-Medium.woff') format('woff'),
+  url('http://media.4at5.net/email_domains/bbb/160900/fonts/TiemposHeadlineWeb-Medium.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+[style*="TiemposHeadline-Medium"] {
+  font-family: 'TiemposHeadline-Medium', 'Times New Roman', serif !important;
+}
+/* use style="font-family:Arial, sans-serif, 'TiemposHeadline-Medium';" */
+
+@font-face {
+  font-family: 'TiemposHeadline-MediumItalic';
+  src: url('http://media.4at5.net/email_domains/bbb/160900/fonts/TiemposHeadlineWeb-MediumItalic.eot') format('embedded-opentype'),
+  url('http://media.4at5.net/email_domains/bbb/160900/fonts/TiemposHeadlineWeb-MediumItalic.woff') format('woff'),
+  url('http://media.4at5.net/email_domains/bbb/160900/fonts/TiemposHeadlineWeb-MediumItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+}
+
+[style*="TiemposHeadline-MediumItalic"] {
+  font-family: 'TiemposHeadline-MediumItalic', Times New Roman, serif !important;
+}
+/* use style="font-family:Arial, sans-serif, 'TiemposHeadline-MediumItalic';" */
+
+* {
+  -webkit-text-size-adjust: none;
+}
+/* prevent iOS font upsizing */
+
+.ExternalClass * {
+  line-height: 100%;
+}
+/* force Outlook.com to honor line-height */
+
+td {
+  mso-line-height-rule: exactly;
+}
+/* prevent iOS auto-linking */
+
+.applefix a {
+  /* use on a span around the text */
+  color: #333333;
+  text-decoration: none;
+}
+
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+/** Prevent Outlook Purple Links **/
+
+.blueLink a:link {
+  color: #302B93;
+}
+.whiteLink a:link {
+  color: #ffffff;
+}
+/** Update Hex to match design **/
+
+[owa] .owaFix {
+  font-size: 1px !important;
+  line-height: 1px !important;
+}
+
+/*** Responsive CSS ***/
+
+@media only screen and (max-width: 414px) {
+/*** Layout ***/
+body {
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+.marginFix {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.full-width-container {
+  width: 100% !important;
+  min-width: 320px !important;
+}
+.full-width-container-inner {
+  width: 100% !important;
+  min-width: 100% !important;
+  padding: 0px 0px 0px 0px !important;
+}
+.hide {
+  width: 0px !important;
+  height: 0px !important;
+  display: none !important;
+}
+.full-width {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+.minWidth {
+	min-width: 110px !important;	
+}
+.stackTbl {
+  width: 100% !important;
+  display: table !important;
+  height: auto !important;
+}
+.center {
+  margin: 0px auto !important;
+}
+.autoHeight {
+  height: auto !important;
+}
+.autoHeight320 {
+  height: 320px !important;
+}
+/*** Padding Styles ***/
+.mobilePadding {
+  padding: 30px 25px 30px 25px !important
+}
+.mobilePadding1 {
+  padding: 30px 25px 30px 25px !important;
+}
+.mobilePadding2 {
+  padding: 40px 25px 40px 25px !important;
+}
+.mobilePadding4 {
+  padding: 30px 25px 40px 25px !important;
+}
+.padding0 {
+  padding: 0px !important
+}
+.topPadding0 {
+  padding-top: 0px !important
+}
+.topPadding4 {
+  padding-top: 4px !important
+}
+.topPadding10 {
+  padding-top: 10px !important;
+}
+.topPadding20 {
+  padding-top: 20px !important;
+}
+.topPadding30 {
+  padding-top: 30px !important;
+}
+.topPadding40 {
+  padding-top: 40px !important;
+}
+.bottomPadding0 {
+  padding-bottom: 0px !important
+}
+.bottomPadding10 {
+  padding-bottom: 10px !important;
+}
+.bottomPadding20 {
+  padding-bottom: 20px !important;
+}
+.bottomPadding40 {
+  padding-bottom: 40px !important;
+}
+.leftPadding0 {
+	padding-left: 0px!important;
+}
+.insetOverlapPaddingLeft {
+  height: 0px !important;
+  padding-top: 55% !important;
+}
+.insetOverlapPaddingRight {
+  height: 60px !important;
+}
+.mobileSidePadding {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+.mobileSidePadding2 {
+  padding-left: 25px !important;
+  padding-right: 0px !important;
+}
+.mobileSidePadding3 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+/*** Text/Divider/Image Styles ***/
+.borderBottom {
+  border-right: none !important;
+  border-left: none !important;
+  border-top: none !important;
+  border-bottom: 1px solid #333333 !important;
+}
+.divider {
+  width: 88% !important;
+}
+.line-divider {
+  padding: 0px 25px 0px 25px !important;
+}
+.fullWidthImg {
+  width: 100% !important;
+  height: auto !important;
+  min-width: 100% !important;
+}
+.col8 {
+  width: 79.4% !important;
+}
+.col6 {
+  width: 57% !important;
+}
+.col5 {
+  width: 46% !important;
+}
+.col4 {
+  width: 36% !important;
+}
+.col2 {
+  width: 17.5% !important;
+}
+.col1 {
+  width: 9% !important;
+}
+.width80 {
+  width: 80px !important;
+}
+.width33 {
+	width: 33%!important;
+}
+.centerText {
+  text-align: center !important;
+}
+.fontSize32 {
+  font-size: 32px !important;
+  line-height: 32px !important;
+}
+.fontSize50 {
+  font-size: 50px !important;
+  line-height: 50px !important;
+}
+.couponBorder {
+		width: 100%!important;
+		border-right: none!important;
+		border-top: dashed 1px #ffffff!important;
+}
+.noBorder	{
+		border: none!important;
+}
+/* background image replacement scalable height */
+.imgReplaceCTATop {
+  background-image: url(http://media.4at5.net/email_domains/bbb/160900/img_feature.jpg) !important;
+  width: 100% !important;
+  height: 250px !important;
+  /* update height here */
+  background-size: cover !important;
+  background-position: center 20px !important;
+  background-repeat: no-repeat !important;
+  display: block !important;
+}
+.imgReplaceInsetOverlap {
+  background-image: url(http://media.4at5.net/email_domains/bbb/160900/img_feature_towels.jpg) !important;
+  width: 100% !important;
+  background-size: contain !important;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+  display: block !important;
+}
+.imgReplaceVerticalSplit {
+  background-image: url(http://media.4at5.net/email_domains/bbb/160900/img_vertical_split.jpg) !important;
+  width: 100% !important;
+  height: 500px;
+  background-size: cover !important;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+  display: block !important;
+}
+.imgReplaceMosaic {
+  background-image: url(http://media.4at5.net/email_domains/bbb/160900/img_mosaic_m.jpg) !important;
+  width: 100% !important;
+  padding-top: 115% !important;
+  /* update height here */
+  background-size: contain !important;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+  display: block !important;
+}
+.imgReplaceCoupon {
+  background-image: url(http://media.4at5.net/email_domains/bbb/160900/coupon_border_m.png) !important;
+  width: 100% !important;
+  height: 2px;
+  /* update height here */
+  background-size: cover !important;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+  display: block !important;
+}
+.imgReplaceStickyContent {
+  background-image: url(http://media.4at5.net/email_domains/bbb/160900/img_tip_patio.jpg) !important;
+  width: 100% !important;
+  padding-top: 60.4% !important;
+  /* update height here */
+  background-size: cover !important;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+  display: block !important;
+}
+/* background image resize scalable height */
+.imgResize {
+  width: 100% !important;
+  height: 400px !important;
+  /* update height here */
+  background-size: cover !important;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+  display: block !important;
+}
+.imgResizeSquare {
+  width: 100% !important;
+  padding-top: 100%;
+  /* height: 364px !important;*/
+  /* update height here */
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+.imgResizeAuto {
+  width: 100% !important;
+  background-size: cover !important;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+  display: block !important;
+}
+.imgResizeColorBlock {
+  width: 100% !important;
+  height: 566px !important;
+  /* update height here */
+}
+/*** Header Styling ***/
+.header-sidebar {
+  width: 35% !important;
+}
+.top-logo {
+  height: 44px;
+}
+.top-logo-link {
+  display: block;
+  background-image: url(http://media.4at5.net/email_domains/bbb/160900/bbb_logo_square.jpg);
+  height: 44px;
+  width: 44px;
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+/*** 3 Across Styling ***/
+.threeAcrossWidth {
+  width: 33% !important;
+}
+.secondaryButton {
+  font-size: 12px !important;
+  padding: 5px 10px 5px 10px !important;
+}
+/*** 4 Across Styling ***/
+.fourAcrossWidth {
+  width: 44% !important;
+}
+/*** Footer Styling ***/
+.footerText, .footerNav {
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+.footerNav {
+  padding: 0px 20px 0px 20px !important;
+}
+/*** END Responsive CSS ***/
+}
+.topPadding10 {
+}
+.mobileSidePadding {
+}
+</style>
+</head>
+
+<body style="margin:0px; padding:0px;">
+
+<!-- CONTAINER -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="marginFix">
+
+
+<!-- HEADER -->
+<tr>
+<td width="100%" align="center" bgcolor="#ffffff">
+<table cellpadding="0" cellspacing="0" border="0" width="640" class="full-width-container">
+<tr>
+  <td width="640" align="center" style="min-width:640px;" class="full-width-container-inner">
+
+    <!-- Pre-Header -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td align="left" style="font-family:Arial, sans-serif; font-size:1px; line-height:1px; color:#ffffff; padding:0px 0px 0px 0px;">Invisible preheader</td>
+      </tr>
+    </table>
+    <!-- End Pre-Header -->
+
+    <!-- Header -->
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td align="center" valign="top" style="padding:20px 0px;padding-bottom:10px;" class="logoPadding">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <!-- logo -->
+              <td align="center" valign="top"><a href="#" target="_blank" style="font-size:1px; line-height:1px; text-decoration:none;"><img src="http://media.4at5.net/email_domains/bbb/160900/bbb_horiz_logo.png" width="250" height="20" border="0" style="color:#302B93; font-weight:bold;font-size:15px;text-transform: uppercase; font-family:Arial, sans-serif;" alt="Bed Bath &amp; Beyond"></a></td>
+              <!-- end logo -->
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <!--[if gte mso 9]>
+      <tr><td height="10" style="font-size: 10px; line-height: 10px; mso-line-height-rule: exactly;" >&nbsp;</td></tr>
+      <![endif]-->
+      
+    </table>
+
+    <!-- line divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td height="1" style="padding: 0px 34px 0px 34px;" class="line-divider">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td height="1" bgcolor="#ACACAC" style="font-size:1px; line-height:1px;">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- end line divider -->
+    
+  </td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- END HEADER -->
+
+
+
+
+    <!-- MAIN CONTENT -->
+        <tr>
+            <td width="100%" align="center" bgcolor="#FFFFFF">
+                <table cellpadding="0" cellspacing="0" border="0" width="640" class="full-width-container">
+                    <tr>
+                        <td width="640" align="center" style="min-width:640px;" class="full-width-container-inner">
+                            <!-- inner container / place all modules below -->
+                            <!-- 0.1 SHIPPING AND PICKUP -->
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                <tr>
+                                    <td align="center" style="padding:0px 14px 10px 14px;" class="mobileSidePaddingTemp">
+                                        <!-- Free Shipping Column -->
+                                        <table width="280" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+                                            <tr>
+                                                <td align="left" valign="top" style="padding-top:10px;"><a href="#" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#333333; font-size:13px; line-height:18px; font-weight:normal;text-decoration: none;"><span style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-weight:bold; color:#302B93; font-size:14px;text-decoration: none;">FREE SHIPPING</span> on orders over $29 &gt;</a></td>
+                                            </tr>
+                                        </table>
+                                        <!-- end Free Shipping Column -->
+                                        <!-- In-store Pickup Column -->
+                                        <table width="320" align="right" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+                                            <tr>
+                                                <td align="left" valign="top" style="padding-top:10px;"><a href="#" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#333333; font-size:13px; line-height:18px; font-weight:normal;text-decoration: none;"><span style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-weight:bold; color:#302B93; font-size:14px;text-decoration: none">IN-STORE PICKUP</span> reserve online, pay in store &gt;</a></td>
+                                            </tr>
+                                        </table>
+                                        <!-- end In-store Pickup Column -->
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- End 0.1 SHIPPING AND PICKUP -->
+
+     <!-- 20px divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="divider">
+      <tr>
+        <td height="10" style="font-size:10px; line-height:10px;">&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End 20px divider -->
+    
+            
+    
+    
+   
+    <!-- inner container / place all modules below -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+   
+   
+    <!--1.5 FEATURE - HEADLINE OVER IMAGE-->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td background="http://via.placeholder.com/640x320" bgcolor="#61bbd9" valign="top" width="640" style="background-repeat:no-repeat" class="">
+          
+          <!--[if gte mso 9]>
+          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px; height:320px;">
+          <v:fill type="frame" src=""http://via.placeholder.com/640x320" color="#61bbd9" />
+          <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+          <![endif]-->
+
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              
+              <!-- adjust height below -->
+              <td height="320" valign="middle" class="autoHeight320">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <tr>
+    
+                    <td align="center" valign="middle">
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                         <tr>
+                          
+                          <td align="center" valign="middle" style="padding:0px 0px 0px 0px;" class="">
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                         
+                        
+            
+           <!-- Headline Montserrat -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Bold'; color:#302B93; font-size:14px; line-height:18px; font-weight:bold; letter-spacing:1px; padding:0px 0px 10px 0px; text-transform:uppercase;">TK EYEBROW</td>
+            </tr>
+            <!-- end Headline Montserrat -->
+            
+            <!-- Headline Tiempos -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Times New Roman', serif, 'TiemposHeadline-Bold'; color:#333333; font-size:38px; line-height:38px; font-weight:bold; padding:0px 0px 0px 0px; letter-spacing:1px;">TK Headline <br></td>
+            </tr>
+            <!-- end Headline Tiempos -->
+                           
+                           
+								  <!-- Montserrat Bold 14pt -->
+                         <tr>
+                          <td align="center" valign="top" class="mobileSidePadding" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#333333; font-size:16px; line-height:20px; font-weight: 100; letter-spacing:0px; padding:20px 90px 30px 90px; text-transform:camel case;">TK body copy lorem ipsum dolor sit amet consectetur adipiscing elit ut nisl lectus. </td>
+                        </tr>
+                        <!-- end Montserrat Bold 14pt -->
+                           
+            
+            <!-- CTA Text Width -->
+            <tr>
+              <td align="center" style="padding:0px 0px 0px 0px;">
+                <table cellpadding="0" cellspacing="0" border="0" class="center">
+                  <tr>
+                    <td bgcolor="#302B93" align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; font-size:14px; line-height:18px; color:#ffffff; font-weight:normal; padding:10px 20px 10px 20px; text-transform:uppercase; border-radius: 5px;" class="whiteLink"><a href="#URL" target="_blank" style="text-decoration:none; color:#ffffff">TK PRIMARY CTA</a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End CTA Text Width -->
+            
+                           
+                            </table>
+                          </td>
+
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <!--[if gte mso 9]>
+          </v:textbox>
+          </v:rect>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+
+    <!-- End 1.5 FEATURE - HEADLINE OVER IMAGE -->
+   
+   
+   
+    
+    
+    <!-- 40px divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="divider">
+      <tr>
+        <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End 40px divider -->
+   
+    <!-- 2.1 CARD OVER IMAGE -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td background="http://via.placeholder.com/640x370" bgcolor="#61bbd9" valign="top" width="640" style="background-repeat:no-repeat" class="imgResizeAuto">
+          <!--[if gte mso 9]>
+          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px; height:321px;">
+          <v:fill type="frame" src="http://via.placeholder.com/640x370" color="#61bbd9" />
+          <v:textbox style="mso-fit-shape-to-text:false" inset="0,0,0,0">
+          <![endif]-->
+
+          <div><div style="font-size: 0;">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              
+              <!-- adjust height below -->
+              <td align="center" valign="middle" style="padding:40px 0px 40px 0px; font-size:0px; line-height:0px;" class="mobileSidePadding3">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <tr>
+                    <td width="93" align="center" valign="top" style="width:93px;" class="hide">&nbsp;</td>
+                    <td align="center" valign="top" height="40" style="padding:40px 0px 40px 0px; background-color:#ffffff; border:solid 0px #333333;" class="mobilePadding1">
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                          <td width="34" align="center" valign="top" style="width:34px;" class="hide">&nbsp;</td>
+                          <td align="center" valign="top">
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                              
+                              
+            <!-- Headline Montserrat -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Bold'; color:#263691; font-size:14px; line-height:18px; font-weight:bold; letter-spacing:1px; padding:0px 0px 10px 0px; text-transform:uppercase;">tk eyebrow</td>
+            </tr>
+            <!-- end Headline Montserrat -->
+                              <!-- Tiempos Headline -->
+                              <tr>
+                                <td align="center" valign="top" style="font-family:Times New Roman, serif, 'TiemposHeadline-Bold'; color:#333333; font-size:40px; line-height:40px; font-weight:bold; padding:0px 0px 20px 0px; letter-spacing:1px;"> TK Hero Headline</td>
+                              </tr>
+                              <!-- end Tiempos Headline -->
+                              
+                              
+            <!-- copy -->
+            <tr>
+              <td align="center" valign="top" class="mobileSidePadding" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#333333; font-size:16px; line-height:22px; font-weight:normal; padding:0px 20px 20px 20px;">TK body copy lorem ipsum dolor sit amet consectetur adipiscing elit ut nisl lectus.</td>
+            </tr>
+            <!-- end copy -->
+            <!-- CTA Text Width -->
+            <tr>
+              <td align="center" style="padding:10px 0px 0px 0px;">
+                <table cellpadding="0" cellspacing="0" border="0" class="center">
+                  <tr>
+                    <td bgcolor="#263691" align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; font-size:14px; line-height:18px; color:#ffffff; font-weight:normal; padding:10px 20px 10px 20px; text-transform:uppercase; border-radius: 5px;" class="whiteLink"><a href="#URL" target="_blank" style="text-decoration:none; color:#ffffff">TK PRIMARY CTA</a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End CTA Text Width -->
+            
+                              
+                            </table>
+                          </td>
+                          <td width="34" align="center" valign="top" style="width:34px;" class="hide">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td width="93" align="center" valign="top" style="width:93px;" class="hide">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          </div></div>
+
+          <!--[if gte mso 9]>
+          <p style="margin:0;mso-hide:all"><o:p xmlns:o="urn:schemas-microsoft-com:office:office">&nbsp;</o:p></p>
+          </v:textbox>
+          </v:rect>
+          <![endif]-->
+          
+        </td>
+      </tr>
+    </table>
+    <!-- End 2.1 CARD OVER IMAGE -->
+
+    <!-- 40px divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="divider">
+      <tr>
+        <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End 40px divider -->
+   
+             
+            <!-- Feature Image -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td><a href="#URL" target="_blank"><img border="0" src="http://via.placeholder.com/1280x640" width="640" height="320" alt="" style="display:block" class="fullWidthImg"></a></td>
+      </tr>
+    </table>
+    <!-- End Feature Image -->
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- 1.2 FEATURE TIEMPOS ALTERNATE - STANDARD/CLASSIC -->
+    
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+      <tr>
+        <td align="center" style="padding:40px 34px 40px 34px;" class="mobileSidePadding">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <!-- Headline Montserrat -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Bold'; color:#263691; font-size:14px; line-height:18px; font-weight:bold; letter-spacing:1px; padding:0px 0px 10px 0px; text-transform:uppercase;">tk eyebrow</td>
+            </tr>
+            <!-- end Headline Montserrat -->
+            
+            <!-- Headline Tiempos -->
+            <tr>
+              <td align="center" valign="top" style="font-family:Times New Roman, serif, 'TiemposHeadline-Bold'; color:#333333; font-size:38px; line-height:38px; font-weight:bold; padding:0px 0px 20px 0px; letter-spacing:1px;">TK Headline Lorem Ipsum<br></td>
+            </tr>
+            <!-- end Headline Tiempos -->
+            
+            <!-- copy -->
+            <tr>
+              <td align="center" valign="top" class="mobileSidePadding" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#333333; font-size:16px; line-height:22px; font-weight:normal; padding:0px 0px 25px 0px;">TK body copy lorem ipsum consectetur adipiscing elit. Ut nisl lectus, placerat sed maximus quis, hendrerit vitae neque. Mauris tristique eros nec quam dapibus, nec suscipit ipsum iaculis. </td>
+            </tr>
+            <!-- end copy -->
+            
+            
+            
+            <!-- CTA Text Width -->
+            <tr>
+              <td align="center" style="padding:0px 0px 0px 0px;">
+                <table cellpadding="0" cellspacing="0" border="0" class="center">
+                  <tr>
+                    <td bgcolor="#302B93" align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; font-size:14px; line-height:18px; color:#ffffff; font-weight:normal; padding:10px 20px 10px 20px; text-transform:uppercase; border-radius: 5px;" class="whiteLink"><a href="#URL" target="_blank" style="text-decoration:none; color:#ffffff">TK PRIMARY CTA</a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End CTA Text Width -->
+            
+            
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- End 1.2 FEATURE - STANDARD/CLASSIC -->
+         
+    
+    
+   
+        
+   
+   
+   
+    
+    
+   
+
+    <!-- 2.2 TWO ACROSS -->
+	<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+	  <tr>
+	    <td align="center" style="padding:0px 34px 0px 34px;" class="">
+				  
+        <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td align="left" valign="top"><![endif]-->
+                  
+          <!-- 2-across column 1 -->
+          <table width="275" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+		    <!-- image -->
+            <tr>
+		      <td align="center" valign="top"  class=""><a href="#URL" target="_blank"><img border="0" src="http://via.placeholder.com/550x550" bgcolor="ffffff" width="275" height="275" alt="" style="display:block"></a></td>
+			</tr>
+            <!-- end image -->
+			  <!-- price -->
+            <tr>
+              <td width="275" align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#ACACAC; font-size:30px; line-height:30px; font-weight:bold; padding:30px 0px 10px 0px;">
+                <span style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#ACACAC;"><sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly; mso-line-height-rule: exactly;">$</sup></span><span style="text-decoration:line-through;">TK</span><sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly; mso-line-height-rule: exactly;">TK</sup>
+                
+                <a href="#URL" target="_blank" style="color:#333333; text-decoration:none;"><span style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#302b93; font-size:30px; vertical-align:-1px;">&nbsp;<sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly; mso-line-height-rule: exactly;">$</sup>TK<sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly; mso-line-height-rule: exactly;">TK</sup></span></a>
+                
+                </td>
+              </tr>
+            <!-- end price -->
+            <!-- ships free --> 
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Bold'; color:#61bbd9; font-size:14px; line-height:18px; font-weight:bold; padding:0px 0px 0px 0px; text-transform:uppercase;">SHIPS FREE</td>
+            </tr>
+            <!-- end ships free -->
+            <!-- Montserrat 17pt -->
+            <tr>
+              <td align="center" valign="top" class="mobileSidePadding" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#333333; font-size:17px; line-height:18px; font-weight:normal; padding:10px 0px 0px 0px"><a href="#URL" target="_blank" style="color:#333333; text-decoration:none;">TK Product Name</a></td>
+            </tr>
+            <!-- end Montserrat 17pt -->
+            <!-- CTA Text Width -->
+            <tr>
+              <td align="center" style="padding:20px 0px 0px 0px;">
+                <table cellpadding="0" cellspacing="0" border="0" class="center">
+                  <tr>
+                    <td align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#302B93; font-weight:normal; padding:10px 20px 10px 20px; border:1px solid #302B93; text-transform:uppercase; border-radius: 5px;">
+                      <a href="#URL" target="_blank" style="text-decoration:none; color:#302B93">Shop Now</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End CTA Text Width -->
+            <!-- Disclaimer -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#333333; font-size:13px; line-height:16px; padding:10px 0px 0px 0px;">Online Only</td>
+            </tr>
+            <!-- end Disclaimer -->         
+            <!-- Flag -->
+            <tr>
+              <td align="center" style="padding:10px 0px 0px 0px;">
+                <table cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                   
+                   
+                    <!-- flag 2 -->
+                    <td bgcolor="#eb7e1f" align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#ffffff; font-weight:bold; padding:0px 5px 0px 5px; text-transform:uppercase;">
+                      CLOSEOUT
+                    </td>
+                    <!-- end flag 2 -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End Flag -->
+            
+               
+		  </table>
+          <!-- end 2-across column 1 -->
+                  
+          <!--[if gte mso 9]></td><td align="left" valign="top"><![endif]-->
+							
+		  <!-- 2-across column 2 -->
+          <table width="275" align="right" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+		    <!-- image -->
+            <tr>
+		      <td align="center" valign="top"  class="topPadding40"><a href="#URL" target="_blank"><img border="0" src="http://via.placeholder.com/550x550" width="275" height="275" alt="" style="display:block"></a></td>
+			</tr>
+            <!-- end image -->
+			<!-- price -->
+            <tr>
+              <td width="275" align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#333333; font-size:30px; line-height:30px; font-weight:bold; padding:30px 0px 10px 0px;">
+                <span style="color:#ACACAC;"><sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly; mso-line-height-rule: exactly;">$</sup><span style="text-decoration:line-through;">TK</span><sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly; mso-line-height-rule: exactly;">TK</sup> - <sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly; mso-line-height-rule: exactly;">$</sup><span style="text-decoration:line-through;">TK</span><sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly; mso-line-height-rule: exactly;">TK</sup></span><br><a href="#URL" target="_blank" style="color:#333333; text-decoration:none;"><span style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#302b93; font-size:30px; vertical-align:-1px;">&nbsp;<sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly; mso-line-height-rule: exactly;">$</sup>TK<sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly; mso-line-height-rule: exactly;">TK</sup></span> - <span style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#302b93; font-size:30px; vertical-align:-1px;">&nbsp;<sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly; mso-line-height-rule: exactly;">$</sup>TK<sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly; mso-line-height-rule: exactly;">TK</sup></span></a>
+              </td>
+            </tr>
+            <!-- end price -->
+           <!-- ships free --> 
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Bold'; color:#61bbd9; font-size:14px; line-height:18px; font-weight:bold; padding:0px 0px 0px 0px; text-transform:uppercase;">SHIPS FREE</td>
+            </tr>
+            <!-- end ships free -->
+            <!-- Montserrat 17pt -->
+            <tr>
+              <td align="center" valign="top" class="mobileSidePadding" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#333333; font-size:17px; line-height:18px; font-weight:normal; padding:10px 0px 0px 0px"><a href="#URL" target="_blank" style="color:#333333; text-decoration:none;">TK Product Name</a></td>
+            </tr>
+            <!-- end Montserrat 17pt -->
+            <!-- CTA Text Width -->
+            <tr>
+              <td align="center" style="padding:20px 0px 0px 0px;">
+                <table cellpadding="0" cellspacing="0" border="0" class="center">
+                  <tr>
+                    <td align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#302B93; font-weight:normal; padding:10px 20px 10px 20px; border:1px solid #302B93; text-transform:uppercase; border-radius: 5px;">
+                      <a href="#URL" target="_blank" style="text-decoration:none; color:#302B93">Shop Now</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End CTA Text Width -->
+            <!-- Disclaimer -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#333333; font-size:13px; line-height:16px; padding:10px 0px 0px 0px;">Online Only</td>
+            </tr>
+            <!-- end Disclaimer -->
+            <!-- Flag -->
+            <tr>
+              <td align="center" style="padding:10px 0px 0px 0px;">
+                <table cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <!-- flag 2 -->
+                    <td bgcolor="#eb7e1f" align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#ffffff; font-weight:bold; padding:0px 5px 0px 5px; text-transform:uppercase;"> CLEARANCE</td>
+                    <!-- end flag 2 -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End Flag -->
+		  </table>
+          <!-- end 2-across column 2 -->
+                  
+        <!--[if gte mso 9]></td></tr></table><![endif]-->
+                  
+        </td>
+	  </tr>
+	</table>
+	<!-- End 2.2 TWO ACROSS -->
+    
+    
+    
+    <!-- 40px divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="divider">
+      <tr>
+        <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End 40px divider -->
+   
+    
+    <!-- line divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td height="1" style="padding: 0px 0px 0px 0px;" class="line-divider">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td height="1" bgcolor="#e1e1e1" style="font-size:1px; line-height:1px;">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- end line divider -->
+  
+  
+    
+    <!-- 40px divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="divider">
+      <tr>
+        <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End 40px divider -->
+   
+  
+    <!-- 2.5 IMAGE LEFT TILES -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+      <tr>
+        <td align="center" style="padding:0px 34px 0px 34px;" class="mobileSidePadding">
+
+          <!-- image -->
+          <table width="275" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+            <tr>
+              <td align="center" valign="top">
+                <a href="#URL" target="_blank"><img border="0" src="http://via.placeholder.com/550x550" width="275" height="275" alt="" style="display:block;" class=""></a>
+              </td>
+            </tr>
+          </table>
+          <!-- end image -->
+
+          <!-- copy -->
+          <table width="275" align="right" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+            <tr>
+              <!-- adjust height of <td> below to match height of image above -->
+              <td align="left" valign="middle" height="275" style="padding:0px 0px 0px 0px;" class="topPadding30 autoHeight">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            
+       <!-- price -->
+            <tr>
+              <td width="277" align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#ACACAC; font-size:30px; line-height:30px; font-weight:bold; padding:0px 0px 10px 0px;">
+                
+                
+                <a href="#URL" target="_blank" style="color:#333333; text-decoration:none;"><span style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#302b93; font-size:30px; vertical-align:-1px;">&nbsp;<sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly;; mso-line-height-rule: exactly;">$</sup>TK<sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly;; mso-line-height-rule: exactly;">TK</sup></span></a>
+                
+                </td>
+              </tr>
+            <!-- end price -->
+            
+            
+            
+            
+                 <!-- ships free --> 
+                 <tr>
+                    <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Bold'; color:#61bbd9; font-size:14px; line-height:18px; font-weight:bold; padding:0px 0px 0px 0px; text-transform:uppercase;">SHIPS FREE</td>
+                  </tr>
+                  <!-- end ships free -->
+                  
+                  
+            
+            <!-- Montserrat 17pt -->
+            <tr>
+              <td align="center" valign="top" class="mobileSidePadding" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#333333; font-size:17px; line-height:18px; font-weight:normal; padding:10px 0px 0px 0px"><a href="#URL" target="_blank" style="color:#333333; text-decoration:none;">TK Product Name</a></td>
+            </tr>
+            <!-- end Montserrat 17pt -->
+            
+            
+            
+            
+            
+            
+            <!-- CTA Text Width -->
+						<tr>
+							<td align="center" style="padding:20px 0px 0px 0px;">
+								<table cellpadding="0" cellspacing="0" border="0" class="center">
+									<tr>
+										<td align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#302B93; font-weight:normal; padding:10px 20px 10px 20px; border:1px solid #302B93; text-transform:uppercase; border-radius: 5px;"><a href="#URL" target="_blank" style="text-decoration:none; color:#302B93">shop now</a></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- End CTA Text Width -->
+            
+                  
+                  
+						<!-- Disclaimer -->
+						<tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#333333; font-size:13px; line-height:16px; padding:10px 0px 0px 0px;">Online Only &nbsp;| &nbsp;Exclusively Ours<sup style="font-size: 9px; line-height: 0; vertical-align: 2px; mso-line-height-rule: exactly;; mso-line-height-rule: exactly;">&trade;</sup></td>
+            </tr>
+            <!-- end Disclaimer -->
+            
+            
+            <!-- Flag -->
+            <tr>
+              <td align="center" style="padding:10px 0px 0px 0px;">
+                <table cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    
+                  
+                    
+                    
+                    <!-- flag 2 -->
+                    <td bgcolor="#000000" align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:13px; line-height:18px; color:#ffffff; font-weight:bold; padding:0px 5px 0px 5px; text-transform:uppercase;"> MANUFACTURER'S SAVINGS EVENT </td>
+                    <!-- end flag 2 -->
+                    
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End Flag -->
+                  
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- end copy -->
+        </td>
+      </tr>
+    </table>
+    <!-- End 2.5 IMAGE LEFT TILES -->
+    
+    <!-- 40px divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="divider">
+      <tr>
+        <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End 40px divider -->
+    
+    
+    
+    <!-- 2.5 IMAGE RIGHT TILES -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+      <tr>
+        <td align="center" style="padding:0px 34px 0px 34px;" class="mobileSidePadding">
+          
+          <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" width="100%" dir="rtl"><tr><td align="left" valign="top" dir="ltr"><![endif]-->
+
+          <!-- image -->
+          <table width="275" align="right" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+            <tr>
+              <td align="center" valign="top">
+                <a href="#URL" target="_blank"><img border="0" src="http://via.placeholder.com/550x550" width="275" height="275" alt="" style="display:block;" class=""></a>
+              </td>
+            </tr>
+          </table>
+          <!-- end image -->
+          
+           <!--[if gte mso 9]></td><td align="left" valign="top" dir="ltr"><![endif]-->
+
+          <!-- copy -->
+          <table width="275" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+            <tr>
+              <!-- adjust height of <td> below to match height of image above -->
+              <td align="left" valign="middle" height="275" style="padding:0px 0px 0px 0px;" class="topPadding30 autoHeight">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            
+       <!-- price -->
+            <tr>
+              <td width="277" align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#ACACAC; font-size:30px; line-height:30px; font-weight:bold; padding:0px 0px 10px 0px;">
+                
+                
+                <a href="#URL" target="_blank" style="color:#333333; text-decoration:none;"><span style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#302b93; font-size:30px; vertical-align:-1px;">&nbsp;<sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly;; mso-line-height-rule: exactly;">$</sup>TK<sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly;; mso-line-height-rule: exactly;">TK</sup></span></a>
+                
+                </td>
+              </tr>
+            <!-- end price -->
+            
+            
+            
+            
+                 <!-- ships free --> 
+                 <tr>
+                    <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Bold'; color:#61bbd9; font-size:14px; line-height:18px; font-weight:bold; padding:0px 0px 0px 0px; text-transform:uppercase;">SHIPS FREE</td>
+                  </tr>
+                  <!-- end ships free -->
+                  
+                  
+            
+            <!-- Montserrat 17pt -->
+            <tr>
+              <td align="center" valign="top" class="mobileSidePadding" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#333333; font-size:17px; line-height:18px; font-weight:normal; padding:10px 0px 0px 0px"><a href="#URL" target="_blank" style="color:#333333; text-decoration:none;">TK Product Name</a></td>
+            </tr>
+            <!-- end Montserrat 17pt -->
+            
+            
+            
+            
+            
+            
+            <!-- CTA Text Width -->
+						<tr>
+							<td align="center" style="padding:20px 0px 0px 0px;">
+								<table cellpadding="0" cellspacing="0" border="0" class="center">
+									<tr>
+										<td align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#302B93; font-weight:normal; padding:10px 20px 10px 20px; border:1px solid #302B93; text-transform:uppercase; border-radius: 5px;"><a href="#URL" target="_blank" style="text-decoration:none; color:#302B93">shop now</a></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- End CTA Text Width -->
+            
+                  
+                  
+						<!-- Disclaimer -->
+						<tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#333333; font-size:13px; line-height:16px; padding:10px 0px 0px 0px;">Online Only &nbsp;| &nbsp;Exclusively Ours<sup style="font-size: 9px; line-height: 0; vertical-align: 2px; mso-line-height-rule: exactly;; mso-line-height-rule: exactly;">&trade;</sup></td>
+            </tr>
+            <!-- end Disclaimer -->
+            
+            
+            <!-- Flag -->
+            <tr>
+              <td align="center" style="padding:10px 0px 0px 0px;">
+                <table cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    
+                  
+                    
+                    
+                    <!-- flag 2 -->
+                    <td bgcolor="#000000" align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:13px; line-height:18px; color:#ffffff; font-weight:bold; padding:0px 5px 0px 5px; text-transform:uppercase;"> MANUFACTURER'S SAVINGS EVENT </td>
+                    <!-- end flag 2 -->
+                    
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End Flag -->
+                  
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- end copy -->
+          
+          <!--[if gte mso 9]></td></tr></table><![endif]-->
+          
+        </td>
+      </tr>
+    </table>
+    <!-- End 2.5 IMAGE RIGHT TILES -->
+    
+    <!-- 40px divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="divider">
+      <tr>
+        <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End 40px divider -->
+   
+    
+   
+        
+    <!-- 2.5 IMAGE RIGHT TILES -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+      <tr>
+        <td align="center" style="padding:0px 0px 0px 0px;">
+          
+          <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" width="100%" dir="rtl"><tr><td align="left" valign="top" dir="ltr"><![endif]-->
+
+          <!-- image -->
+          <table width="320" align="right" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+            <tr>
+              <td align="center" valign="top"><a href="#URL" target="_blank"><img border="0" src="http://via.placeholder.com/640x840" width="320" height="420" alt="" style="display:block;"></a>
+                    </td>
+            </tr>
+          </table>
+          <!-- end image -->
+          
+           <!--[if gte mso 9]></td><td align="left" valign="top" dir="ltr"><![endif]-->
+
+          <table width="320" height="420" bgcolor="#ffffff" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+                  <tr>
+                    <td width="320" height="420" align="center" valign="middle" style="padding:0px 30px 0px 30px;" class="full-width mobilePadding1 autoHeight topPadding30">
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        
+                        
+                        
+                        <!-- Montserrat Book 21 pt -->
+                        <tr>
+                          <td align="center" valign="top" style="font-family:'Times New Roman', serif, 'TiemposHeadline-Bold'; color:#333333; font-size:27px; line-height:28px; font-weight:normal; letter-spacing:1px; padding:0px 0px 10px 0px;">TK Headline</td>
+                        </tr>
+                        <!-- end Montserrat Book 21 pt -->
+                        
+                         
+                        <!-- Rokkitt Extra Bold 15pt -->   
+                        <tr>
+                          <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#333333; font-size:16px; line-height:22px;">TK body copy lorem ipsum consectetur adipiscing elit. </td>
+                        </tr>
+                        <!-- end Rokkitt Extra Bold 15pt -->
+                        
+                        
+                        
+            <!-- price -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#302B93; font-size:30px; line-height:30px; font-weight:bold; padding:20px 0px 10px 0px;">
+                <a href="#URL" target="_blank" style="color:#302B93; text-decoration:none;"><sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly;; mso-line-height-rule: exactly;">$</sup>TK<sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly;; mso-line-height-rule: exactly;">TK</sup></a>
+              </td>
+            </tr>
+            <!-- end price -->
+            
+            
+            
+            
+            
+                 <!-- ships free --> 
+                 <tr>
+                    <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Bold'; color:#61bbd9; font-size:14px; line-height:18px; font-weight:bold; padding:0px 0px 0px 0px; text-transform:uppercase;">SHIPS FREE</td>
+                  </tr>
+                  <!-- end ships free -->
+                  
+                  
+            
+            <!-- Montserrat 17pt -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#333333; font-size:17px; line-height:18px; font-weight:normal; padding:10px 0px 0px 0px"><span style="font-family:Gill Sans, Gill Sans MT, sans-serif, 'Rokkitt-ExtraBold'; font-weight:bold; color:#302B93; font-size:18px;"></span> <a href="#URL" target="_blank" style="color:#333333; text-decoration:none;"><span style="font-family:Gill Sans, Gill Sans MT, sans-serif, 'Rokkitt-ExtraBold'; font-weight:bold; color:#302B93; font-size:18px;">NEW!</span> TK Product Name</a></td>
+            </tr>
+            <!-- end Montserrat 17pt -->
+            
+            
+            
+            
+            
+            
+            <!-- CTA Text Width -->
+						<tr>
+							<td align="center" style="padding:20px 0px 0px 0px;">
+								<table cellpadding="0" cellspacing="0" border="0" class="center">
+									<tr>
+										<td align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#302B93; font-weight:normal; padding:10px 20px 10px 20px; border:1px solid #302B93; text-transform:uppercase; border-radius: 5px;"><a href="#URL" target="_blank" style="text-decoration:none; color:#302B93">shop now</a></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- End CTA Text Width -->
+            
+                  
+                  
+						<!-- Disclaimer -->
+						<tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#333333; font-size:13px; line-height:16px; padding:10px 0px 0px 0px;">Excluded from Coupon</td>
+            </tr>
+            <!-- end Disclaimer -->
+            
+                        
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+          
+          <!--[if gte mso 9]></td></tr></table><![endif]-->
+          
+        </td>
+      </tr>
+    </table>
+    <!-- End 2.5 IMAGE RIGHT TILES -->
+    
+    
+   
+   
+    <!-- 30px divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="divider">
+      <tr>
+        <td height="20" style="font-size:5px; line-height:5px;">&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End 30px divider -->
+    
+
+        
+        <!-- 2.8 IMAGE AND COLOR BLOCK -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+      <tr>
+        <td align="center" style="padding:0px 0px 0px 0px;">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td align="center">
+
+				<!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td align="left" valign="top"><![endif]-->
+
+                <!-- image -->
+                <table width="320" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+                  <tr>
+                    <td align="center" valign="top">
+                      <a href="#URL" target="_blank"><img border="0" src="http://via.placeholder.com/640x840" width="320" height="420" alt="" style="display:block;"></a>
+                    </td>
+                  </tr>
+                </table>
+                <!-- end image -->
+                
+                  <!--[if gte mso 9]></td><td align="left" valign="top"><![endif]-->
+                
+                
+                <table width="320" height="420" bgcolor="#ffffff" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+                  <tr>
+                    <td width="320" height="420" align="center" valign="middle" style="padding:0px 30px 0px 30px;" class="full-width mobilePadding1 autoHeight topPadding30">
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        
+                        
+                        
+                        
+                        <!-- Montserrat Book 21 pt -->
+                        <tr>
+                          <td align="center" valign="top" style="font-family:'Times New Roman', serif, 'TiemposHeadline-Bold'; color:#333333; font-size:27px; line-height:28px; font-weight:normal; letter-spacing:1px; padding:0px 0px 10px 0px;">TK Headline</td>
+                        </tr>
+                        <!-- end Montserrat Book 21 pt -->
+                        
+                         
+                        <!-- Rokkitt Extra Bold 15pt -->   
+                        <tr>
+                          <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#333333; font-size:16px; line-height:22px;">TK body copy lorem ipsum consectetur adipiscing elit. </td>
+                        </tr>
+                        <!-- end Rokkitt Extra Bold 15pt -->
+                        
+                        
+                        
+            <!-- price -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#302B93; font-size:30px; line-height:30px; font-weight:bold; padding:20px 0px 10px 0px;">
+                <a href="#URL" target="_blank" style="color:#302B93; text-decoration:none;"><sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly;; mso-line-height-rule: exactly;">$</sup>TK<sup style="font-size: 15px; line-height: 0; vertical-align: 10px; mso-line-height-rule: exactly;; mso-line-height-rule: exactly;">TK</sup></a>
+              </td>
+            </tr>
+            <!-- end price -->
+            
+            
+            
+            
+            
+                 <!-- ships free --> 
+                 <tr>
+                    <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Bold'; color:#61bbd9; font-size:14px; line-height:18px; font-weight:bold; padding:0px 0px 0px 0px; text-transform:uppercase;">SHIPS FREE</td>
+                  </tr>
+                  <!-- end ships free -->
+                  
+                  
+            
+            <!-- Montserrat 17pt -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#333333; font-size:17px; line-height:18px; font-weight:normal; padding:10px 20px 0px 20px"><span style="font-family:Gill Sans, Gill Sans MT, sans-serif, 'Rokkitt-ExtraBold'; font-weight:bold; color:#302B93; font-size:18px;"></span> <a href="#URL" target="_blank" style="color:#333333; text-decoration:none;">TK Product Name</a></td>
+            </tr>
+            <!-- end Montserrat 17pt -->
+            
+            
+            
+            
+            
+            
+            <!-- CTA Text Width -->
+						<tr>
+							<td align="center" style="padding:20px 0px 0px 0px;">
+								<table cellpadding="0" cellspacing="0" border="0" class="center">
+									<tr>
+										<td align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#302B93; font-weight:normal; padding:10px 20px 10px 20px; border:1px solid #302B93; text-transform:uppercase; border-radius: 5px;"><a href="#URL" target="_blank" style="text-decoration:none; color:#302B93">shop now</a></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- End CTA Text Width -->
+            
+                  
+                  
+						<!-- Disclaimer -->
+						<tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#333333; font-size:13px; line-height:16px; padding:10px 0px 0px 0px;">Excluded from Coupon</td>
+            </tr>
+            <!-- end Disclaimer -->
+            
+                        
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!-- end copy -->
+                
+                 <!--[if gte mso 9]></td></tr></table><![endif]-->
+
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  
+    
+    <!-- End 2.8 IMAGE AND COLOR BLOCK -->
+    
+    
+    
+    <!-- 40px divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="divider">
+      <tr>
+        <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End 40px divider -->
+   
+    
+    
+<!-- The Outlet Hero -->
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+      <tr>
+        <td align="center" style="padding:40px 34px 40px 34px; border: solid 4px #eb7e1f;" class="mobileSidePadding">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            
+            <!-- Subheadline Rockkitt -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'TiemposHeadline-MediumItalic', Times New Roman, serif !important; color:#eb7e1f; font-size:34px; line-height:19px;  letter-spacing:1px; padding:0px 0px 16px 0px;"><em>new steals in</em></td>
+            </tr>
+            <!-- end Subheadline Rockkitt -->
+            
+            
+            <!-- Headeline Montserrat -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Bold'; color:#333333; font-size:77px; line-height:77px; font-weight:normal; padding:0px 0px 10px 0px; letter-spacing:1px; text-transform:uppercase;" class="fontSize50"><a href="#URL" target="_blank" style="color:#eb7e1f; text-transform:uppercase; text-decoration:none;">The Outlet</a></td>
+            </tr>
+            <!-- end Headeline Montserrat -->
+            
+            
+            
+            <!-- copy Montserrat -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#eb7e1f; font-size:21px; line-height:25px; font-weight:normal; text-transform:uppercase; padding:0px 50px 25px 50px;" class="mobileSidePadding">for clearance, closeouts, manufacturer's deals &amp; more.</td>
+            </tr>
+            <!-- end copy Montserrat -->
+           
+            
+            <!-- CTA Text Width -->
+            <tr>
+              <td align="center" style="padding:0px 0px 0px 0px;">
+                <table cellpadding="0" cellspacing="0" border="0" class="center">
+                  <tr>
+                    <td bgcolor="#eb7e1f" align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; font-size:14px; line-height:18px; color:#ffffff; font-weight:normal; padding:10px 20px 10px 20px; text-transform:uppercase; border-radius: 5px; " class="whiteLink"><a href="#URL" target="_blank" style="text-decoration:none;text-transform:uppercase; color:#ffffff">Shop the outlet</a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End CTA Text Width -->
+            
+          </table>
+        </td>
+      </tr>
+      
+      
+      
+    </table>
+
+      <!-- End The Outlet Hero -->
+
+    
+
+<!-- Story 1-->
+
+      <!-- Category Heading 1 -->
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#eb7e1f">
+      <tr>
+        <td align="center" style="padding:30px 34px 33px 34px; border: solid 4px #eb7e1f;" class="mobileSidePadding">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          
+            
+            
+            <!-- Headeline Montserrat -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'TiemposHeadline-MediumItalic', Times New Roman, serif !important; color:#333333; font-size:30px; line-height:30px; font-weight:normal; padding:0px 0px 16px 0px; letter-spacing:1px;"><a href="#URL" target="_blank" style="color:#ffffff; text-decoration:none;"><em>TK Outlet Headline</em></a></td>
+            </tr>
+            <!-- end Headeline Montserrat -->
+            
+            
+             <!-- Montserrat Bold 14pt -->
+                         <tr>
+                          <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#ffffff; font-size:16px; line-height:20px; font-weight: 100; letter-spacing:0px; padding:0px 40px 0px 40px; text-transform:camel case;" class="mobileSidePadding">TK body copy lorem ipsum consectetur adipiscing elit. Ut nisl lectus, placerat sed maximus quis, hendrerit vitae neque.</td>
+                        </tr>
+                        <!-- end Montserrat Bold 14pt -->
+                           
+           
+            
+            <!-- CTA Text Width -->
+            <tr>
+              <td align="center" style="padding:25px 0px 0px 0px;">
+                <table cellpadding="0" cellspacing="0" border="0" class="center">
+                  <tr>
+                    <td bgcolor="#eb7e1f" align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#ffffff;  border: 1px solid  #ffffff; font-weight:normal; padding:10px 20px 10px 20px; text-transform:uppercase; border-radius: 5px;" class="whiteLink"><a class="whiteLink" href="#URL" target="_blank" style="text-decoration:none; color:#ffffff;text-transform:uppercase;">tk secondary cta</a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End CTA Text Width -->
+            
+          </table>
+        </td>
+      </tr>
+      
+      
+      
+    </table>
+
+      <!-- End Category Heading 1 -->
+
+    <!-- 40px divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="divider">
+      <tr>
+        <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End 40px divider -->
+   
+    
+           
+           
+      <!-- Category Heading 1 -->
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#333333">
+      <tr>
+        <td align="center" style="padding:30px 34px 33px 34px;" class="mobileSidePadding">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          
+            
+            <!-- Tiempos Headline -->
+            <tr>
+              <td bgcolor="" align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Bold'; color:#ffffff; font-size:27px; line-height:30px; letter-spacing: 1px; font-weight:bold; padding:0px 0px 0px 0px"><a href="#URL" target="_blank" style="color:#ffffff; text-decoration:none;">Section Headline Lorem Ipsum</a></td>
+            </tr>
+            <!-- end Tiempos Headline -->
+            
+            <!-- Montserrat 16pt -->
+            <tr>
+              <td align="center" valign="top" bgcolor="" class="mobileSidePadding" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#ffffff; font-size:16px; line-height:20px; padding:10px 0px 0px 0px;">TK body copy lorem ipsum consectetur adipiscing elit. Ut nisl lectus, placerat sed maximus quis, hendrerit vitae neque. </td>
+            </tr>
+            <!-- end Montserrat 16pt -->
+                                
+                                
+                                
+                                
+                                 <!-- CTA Text Width -->
+						<tr>
+							<td align="center" style="padding:20px 0px 0px 0px;">
+								<table cellpadding="0" cellspacing="0" border="0" class="center">
+									<tr>
+										<td align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#ffffff; font-weight:normal; padding:10px 20px 10px 20px; border:1px solid #ffffff; text-transform:uppercase; border-radius: 5px;"><a href="#URL" target="_blank" style="text-decoration:none; color:#ffffff">TK SECONDARY CTA</a></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- End CTA Text Width -->
+                                
+                                 
+            
+          </table>
+        </td>
+      </tr>
+      
+      
+      
+    </table>
+
+      <!-- End Category Heading 1 -->
+           
+    <!-- 40px divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="divider">
+      <tr>
+        <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End 40px divider -->
+   
+    
+    
+    <!-- 2.8 IMAGE AND COLOR BLOCK -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+      <tr>
+        <td align="center" style="padding:0px 34px 0px 34px;" class="mobileSidePadding">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td>
+
+                <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" width="100%" dir="rtl"><tr><td align="left" valign="top" dir="ltr"><![endif]-->
+					
+				<!-- image -->
+                <table width="287" align="right" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+                  <tr>
+                    <td align="center" valign="top">
+                      <a href="#URL" target="_blank"><img border="0" src="http://via.placeholder.com/574x574" width="287" height="287" alt="" style="display:block;" class="fullWidthImg"></a>
+                    </td>
+                  </tr>
+                </table>
+                <!-- end image -->
+					
+				<!--[if gte mso 9]></td><td align="left" valign="top" dir="ltr"><![endif]-->
+					
+				<table width="285" height="287" bgcolor="#302B93" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+                  <tr>
+                    <td width="285" height="287" align="center" valign="middle" style="padding:0px 30px 0px 30px;" class="full-width mobilePadding2 autoHeight">
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                       
+            <!-- Headline Tiempos -->
+            <tr>
+              <td align="center" valign="top" style="font-family:Times New Roman, serif, 'TiemposHeadline-Bold'; color:#ffffff; font-size:27px; line-height:28px; font-weight:bold; padding:0px 0px 20px 0px; letter-spacing:1px;"><a href="#URL" target="_blank" style="color:#FFFFFF; text-decoration:none;">TK Headline Lorem Ipsum</a></td>
+            </tr>
+            <!-- end Headline Tiempos -->
+                          
+                        <!-- Rokkitt Extra Bold 15pt -->   
+                        <tr>
+                          <td align="center" valign="top" class="mobileSidePadding" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#ffffff; font-size:16px; line-height:22px;">TK body copy lorem ipsum consectetur adipiscing elit. Ut nisl lectus.</td>
+                        </tr>
+                        <!-- end Rokkitt Extra Bold 15pt -->
+                        
+                        <!-- CTA -->
+                        <tr>
+                          <td align="center" style="padding:30px 0px 0px 0px;">
+                            <table cellpadding="0" cellspacing="0" border="0" class="center">
+                              <tr>
+                                <td align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#ffffff; font-weight:normal; padding:10px 20px 10px 20px; border:1px solid #ffffff; text-transform:uppercase; border-radius: 5px;"
+                                  class="whiteLink"><a href="#URL" target="_blank" style="text-decoration:none; color:#ffffff">TK SECONDARY CTA</a></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- End CTA -->
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+					
+			    <!--[if gte mso 9]></td></tr></table><![endif]-->
+
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- End 2.8 IMAGE AND COLOR BLOCK -->
+    
+    
+    
+   
+    <!-- 40px divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="divider">
+      <tr>
+        <td height="40" style="font-size:20px; line-height:40px;">&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End 40px divider -->
+    
+    
+    <!-- line divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td height="1" style="padding: 0px 0px 0px 0px;" class="line-divider">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td height="1" bgcolor="#e1e1e1" style="font-size:1px; line-height:1px;">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- end line divider -->
+
+    <!-- 40px divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="divider">
+      <tr>
+        <td height="40" style="font-size:20px; line-height:40px;">&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End 40px divider -->
+
+    
+      
+    
+    <!-- 2.8 IMAGE AND COLOR BLOCK -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF">
+      <tr>
+        <td align="center" style="padding:0px 0px 0px 0px;">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td align="center">
+
+                <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td align="left" valign="top"><![endif]-->
+
+                <!-- image -->
+                <table width="320" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+                  <tr>
+                    <td align="center" valign="top">
+                      <a href="#URL" target="_blank"><img border="0" src="http://via.placeholder.com/640x360" width="320" height="180" alt="" style="display:block;" class="fullWidthImg"></a>
+                    </td>
+                  </tr>
+                </table>
+                <!-- end image -->
+
+                <!--[if gte mso 9]></td><td align="left" valign="top"><![endif]-->
+
+                <table width="320" height="180" bgcolor="#6f656a" align="right" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+                  <tr>
+                    <td width="320" height="180" align="center" valign="middle" style="padding:0px 20px 0px 20px;" class="full-width mobilePadding1 autoHeight">
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                          <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#ffffff; font-size:27px; line-height:28px; text-transform:uppercase; font-weight:normal; letter-spacing:0px; padding:0px 0px 10px 0px;"><a href="#URL" target="_blank" style="color:#FFFFFF; text-decoration:none;">TK HEADLINE</a></td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top" class="mobileSidePadding" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Light'; color:#ffffff; font-size:16px; line-height:19px; padding:0px 10px 0px 10px; letter-spacing:0px;">TK body copy lorem ipsum consectetur adipiscing elit.</td>
+                        </tr>
+                  		<!-- CTA -->
+                  		<tr>
+                    	  <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Bold'; color:#ffffff; font-size:14px; line-height:16px; font-weight:bold; padding:10px 0px 0px 0px; text-transform:uppercase;"><a href="#URL" target="_blank" style="color:#ffffff; text-decoration:none;">TK CTA<span style="font-size:26px;vertical-align: -2px;">&nbsp;&rsaquo;</span></a></td>
+                  		</tr>
+                  		<!-- End CTA -->
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <!--[if gte mso 9]></td></tr></table><![endif]-->
+                
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- End 2.8 IMAGE AND COLOR BLOCK -->
+    
+    
+    
+    
+    <!-- 5px divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="divider">
+      <tr>
+        <td height="5" style="font-size:5px; line-height:5px;">&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End 5px divider -->
+
+    
+    
+    <!-- 2.8 IMAGE AND COLOR BLOCK -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF">
+      <tr>
+        <td align="center" style="padding:0px 0px 0px 0px;">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td align="center">
+
+                <!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" width="100%" dir="rtl"><tr><td align="left" valign="top" dir="ltr"><![endif]-->
+
+                <!-- image -->
+                <table width="320" align="right" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+                  <tr>
+                    <td align="center" valign="top">
+                      <a href="#URL" target="_blank"><img border="0" src="http://via.placeholder.com/640x360" width="320" height="180" alt="" style="display:block;" class="fullWidthImg"></a>
+                    </td>
+                  </tr>
+                </table>
+                <!-- end image -->
+
+                <!--[if gte mso 9]></td><td align="left" valign="top" dir="ltr"><![endif]-->
+
+                <table width="320" height="180" bgcolor="#59898b" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline;">
+                  <tr>
+                    <td width="320" height="180" align="center" valign="middle" style="padding:0px 20px 0px 20px;" class="full-width mobilePadding1 autoHeight">
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                          <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#ffffff; font-size:27px; line-height:28px; text-transform:uppercase; font-weight:normal; letter-spacing:0px; padding:0px 0px 10px 0px;"><a href="#URL" target="_blank" style="color:#FFFFFF; text-decoration:none;">TK HEADLINE</a></td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top" class="mobileSidePadding" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Light'; color:#ffffff; font-size:16px; line-height:19px; padding:0px 10px 0px 10px; letter-spacing:0px;">TK body copy lorem ipsum consectetur adipiscing elit.</td>
+                        </tr>
+                  		<!-- CTA -->
+                  		<tr>
+                    	  <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Bold'; color:#ffffff; font-size:14px; line-height:16px; font-weight:bold; padding:10px 0px 0px 0px; text-transform:uppercase;"><a href="#URL" target="_blank" style="color:#ffffff; text-decoration:none;">TK CTA<span style="font-size:26px;vertical-align: -2px;">&nbsp;&rsaquo;</span></a></td>
+                  		</tr>
+                  		<!-- End CTA -->
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <!--[if gte mso 9]></td></tr></table><![endif]-->
+                
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- End 2.8 IMAGE AND COLOR BLOCK -->
+    
+        
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+     <!-- 4.6 RECOVERY LINKS HEADER -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+      <tr>
+        <td align="center" style="padding:40px 34px 24px 34px;" class="mobileSidePadding">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Bold'; color:#302B93; font-size:22px; line-height:26px; font-weight:bold; padding:0px 0px 0px 0px; text-transform:uppercase;">Tk headline</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- End 4.6 RECOVERY LINKS HEADER -->
+
+  <!-- 3.1 THREE ACROSS -->
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td align="center" style="padding:0px 34px 40px 34px;" class="mobileSidePadding"><table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td><!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td align="left" valign="top"><![endif]-->
+              <!-- 3 across column 1 -->
+              <table cellpadding="0" cellspacing="0" border="0" width="197" align="left" class="stackTbl">
+                <tr>
+                  <td style="padding-right:19px;" valign="top" class="padding0"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td height="178" align="center" valign="middle"><a href="#"><img src="http://via.placeholder.com/356x356" width="178" height="178" alt=""/></a></td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding:10px 0px 0px 0px;"><a href="#" target="_blank" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#263387; font-weight:bold; text-decoration:none;font-size: 14px;text-transform: uppercase;">TK Lorem ipsum<span style="font-size:18px;">&nbsp;&rsaquo;</span></a></td>
+                    </tr>
+                  </table></td>
+                </tr>
+              </table>
+              <!--[if gte mso 9]></td><td align="left" valign="top"><![endif]-->
+              <!-- 3 across column 2 -->
+              <table cellpadding="0" cellspacing="0" border="0" width="197" align="left" class="stackTbl">
+                <tr>
+                  <td style="padding-right:19px;" valign="top" class="padding0 topPadding40"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td height="178" align="center" valign="middle"><a href="#"><img src="http://via.placeholder.com/356x356" width="178" height="178" alt=""/></a></td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding:10px 0px 0px 0px;"><a href="#" target="_blank" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#263387; font-weight:bold; text-decoration:none;font-size: 14px;text-transform: uppercase;">TK Lorem ipsum<span style="font-size:18px;">&nbsp;&rsaquo;</span></a></td>
+                    </tr>
+                  </table></td>
+                </tr>
+              </table>
+              <!--[if gte mso 9]></td><td align="left" valign="top"><![endif]-->
+              <!-- 3 across column 3 -->
+              <table cellpadding="0" cellspacing="0" border="0" width="178" align="left" class="stackTbl">
+                <tr>
+                  <td valign="top" class="topPadding40"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td height="178" align="center" valign="middle"><a href="#"><img src="http://via.placeholder.com/356x356" width="178" height="178" alt=""/></a></td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding:10px 0px 0px 0px;"><a href="#" target="_blank" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#263387; font-weight:bold; text-decoration:none;font-size: 14px;text-transform: uppercase;">TK Lorem ipsum<span style="font-size:18px;">&nbsp;&rsaquo;</span></a></td>
+                    </tr>
+                  </table></td>
+                </tr>
+              </table>
+              <!--[if gte mso 9]></td></tr></table><![endif]--></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <!-- end 3.1 THREE ACROSS -->
+  
+    
+    
+    
+    
+    
+    <!-- line divider -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td height="1" style="padding: 0px 0px 0px 0px;" class="line-divider">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td height="1" bgcolor="#e1e1e1" style="font-size:1px; line-height:1px;">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- end line divider -->
+    
+    
+    
+  <!-- 3.1 THREE ACROSS -->
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td align="center" style="padding:40px 34px 40px 34px;" class="mobileSidePadding"><table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td><!--[if gte mso 9]><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td align="left" valign="top"><![endif]-->
+              <!-- 3 across column 1 -->
+              <table cellpadding="0" cellspacing="0" border="0" width="197" align="left" class="stackTbl">
+                <tr>
+                  <td style="padding-right:19px;" valign="top" class="padding0"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td height="178" align="center" valign="middle"><a href="#"><img src="http://via.placeholder.com/356x356" width="178" height="178" alt=""/></a></td>
+                    </tr>
+                   <tr>
+                          <td align="center" valign="top" class="mobileSidePadding" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#333333; font-size:17px; line-height:21px; font-weight:bold; padding:20px 0px 0px 0px;"><a href="#" target="_blank" style="color:#333333; text-decoration:none;">TK Product Name</a></td>
+                        </tr>
+                        
+                        
+                        
+                        
+                        
+  <!-- CTA Text Width -->
+						<tr>
+							<td align="center" style="padding:20px 0px 0px 0px;">
+								<table cellpadding="0" cellspacing="0" border="0" class="center">
+									<tr>
+										<td align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#302b93; font-weight:normal; padding:10px 20px 10px 20px; border:1px solid #302b93; text-transform:uppercase; border-radius: 5px;">
+											<a href="#URL" target="_blank" style="text-decoration:none; color:#302b93">Shop NOW</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- End CTA Text Width -->
+                   
+                     <!-- Flag -->
+            <tr>
+              <td align="center" style="padding:10px 0px 0px 0px;">
+                <table cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                   
+                   
+                    <!-- flag 2 -->
+                    <td bgcolor="#eb7e1f" align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#ffffff; font-weight:bold; padding:0px 5px 0px 5px; text-transform:uppercase;">
+                      CLOSEOUT
+                    </td>
+                    <!-- end flag 2 -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End Flag -->
+            
+                    
+                    
+                                            <!-- disclaimer -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#333333; font-size:13px; line-height:16px; padding:10px 0px 0px 0px;">Online Only</td>
+            </tr>
+            <!-- end disclaimer -->
+                     
+                     
+                  </table></td>
+                </tr>
+              </table>
+              <!--[if gte mso 9]></td><td align="left" valign="top"><![endif]-->
+              <!-- 3 across column 2 -->
+              <table cellpadding="0" cellspacing="0" border="0" width="197" align="left" class="stackTbl">
+                <tr>
+                  <td style="padding-right:19px;" valign="top" class="padding0 topPadding40"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td height="178" align="center" valign="middle"><a href="#"><img src="http://via.placeholder.com/356x356" width="178" height="178" alt=""/></a></td>
+                    </tr>
+                    <tr>
+                          <td align="center" valign="top" class="mobileSidePadding" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#333333; font-size:17px; line-height:21px; font-weight:bold; padding:20px 0px 0px 0px;"><a href="#" target="_blank" style="color:#333333; text-decoration:none;">TK Product Name</a></td>
+                        </tr>
+                        
+                        
+                        
+                        
+                        
+  <!-- CTA Text Width -->
+						<tr>
+							<td align="center" style="padding:20px 0px 0px 0px;">
+								<table cellpadding="0" cellspacing="0" border="0" class="center">
+									<tr>
+										<td align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#302b93; font-weight:normal; padding:10px 20px 10px 20px; border:1px solid #302b93; text-transform:uppercase; border-radius: 5px;">
+											<a href="#URL" target="_blank" style="text-decoration:none; color:#302b93">Shop NOW</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- End CTA Text Width -->
+                   
+                   
+                     <!-- Flag -->
+            <tr>
+              <td align="center" style="padding:10px 0px 0px 0px;">
+                <table cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                   
+                   
+                    <!-- flag 2 -->
+                    <td bgcolor="#eb7e1f" align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#ffffff; font-weight:bold; padding:0px 5px 0px 5px; text-transform:uppercase;">
+                      CLOSEOUT
+                    </td>
+                    <!-- end flag 2 -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End Flag -->
+            
+                    
+                    
+                                            <!-- disclaimer -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#333333; font-size:13px; line-height:16px; padding:10px 0px 0px 0px;">Online Only</td>
+            </tr>
+            <!-- end disclaimer -->
+                     
+                  </table></td>
+                </tr>
+              </table>
+              <!--[if gte mso 9]></td><td align="left" valign="top"><![endif]-->
+              <!-- 3 across column 3 -->
+              <table cellpadding="0" cellspacing="0" border="0" width="178" align="left" class="stackTbl">
+                <tr>
+                  <td valign="top" class="topPadding40"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td height="178" align="center" valign="middle"><a href="#"><img src="http://via.placeholder.com/356x356" width="178" height="178" alt=""/></a></td>
+                    </tr>
+                   <tr>
+                          <td align="center" valign="top" class="mobileSidePadding" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; color:#333333; font-size:17px; line-height:21px; font-weight:bold; padding:20px 0px 0px 0px;"><a href="#" target="_blank" style="color:#333333; text-decoration:none;">TK Product Name</a></td>
+                        </tr>
+                        
+                        
+                        
+                        
+                        
+  <!-- CTA Text Width -->
+						<tr>
+							<td align="center" style="padding:20px 0px 0px 0px;">
+								<table cellpadding="0" cellspacing="0" border="0" class="center">
+									<tr>
+										<td align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#302b93; font-weight:normal; padding:10px 20px 10px 20px; border:1px solid #302b93; text-transform:uppercase; border-radius: 5px;">
+											<a href="#URL" target="_blank" style="text-decoration:none; color:#302b93">Shop NOW</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- End CTA Text Width -->
+                   
+                   
+                     <!-- Flag -->
+            <tr>
+              <td align="center" style="padding:10px 0px 0px 0px;">
+                <table cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                   
+                   
+                    <!-- flag 2 -->
+                    <td bgcolor="#eb7e1f" align="center" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:14px; line-height:18px; color:#ffffff; font-weight:bold; padding:0px 5px 0px 5px; text-transform:uppercase;">
+                      CLOSEOUT
+                    </td>
+                    <!-- end flag 2 -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End Flag -->
+            
+                    
+                    
+                                            <!-- disclaimer -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; color:#333333; font-size:13px; line-height:16px; padding:10px 0px 0px 0px;">Online Only</td>
+            </tr>
+            <!-- end disclaimer -->
+                     
+                  </table></td>
+                </tr>
+              </table>
+              <!--[if gte mso 9]></td></tr></table><![endif]--></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <!-- end 3.1 THREE ACROSS -->
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <!-- end inner container / place all modules above -->
+    
+  </td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- MAIN CONTENT -->
+
+
+
+<!-- FOOTER -->
+<tr>
+<td width="100%" align="center" bgcolor="#f2f2f2">
+<table cellpadding="0" cellspacing="0" border="0" width="640" class="full-width-container">
+<tr>
+  <td width="640" align="center" style="min-width:640px;" class="full-width-container-inner">
+
+    <!-- inner container / place all modules below -->
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <td align="left" valign="middle" style="padding:40px 34px 40px 34px;" class="mobileSidePadding3">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+           
+            <!-- logo -->
+            <tr>
+              <td align="center" valign="middle" style="padding:0px 0px 30px 0px;">
+                <a href="#URL" target="_blank"><img src="http://media.4at5.net/email_domains/bbb/160900/bbb_logo.png" width="113" height="36" border="0" style="color:#333333;font-weight:bold;font-size:15px;font-family: Arial, sans-serif; display:block;" alt="Bed Bath &amp; Beyond"></a>
+              </td>
+            </tr>
+            <!-- end logo -->
+            
+            <tr>
+              <td height="1">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <tr>
+                    <td height="1" bgcolor="#ACACAC" style="font-size:1px; line-height:1px; color:#ACACAC;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            
+            <tr>
+              <td align="center" style="padding:30px 0px 40px 0px;">
+                <table align="center" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                   
+                    <!-- bath -->
+                    <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; font-size:16px; line-height:19px; color: #666666; font-weight:normal; padding:0px 30px 0px 30px;" class="footerNav"><a href="#URL" target="_blank" style="color:#666666; text-decoration:none;">Bath</a></td>
+                    
+                    <td width="1" bgcolor="#666666" align="center" valign="top" style="font-family:Arial, sans-serif; font-size:1px; color: #f2f2f2;">&nbsp;</td>
+                    
+                    <!-- what's new -->
+                    <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; font-size:16px; line-height:19px; color: #666666; font-weight:normal; padding:0px 30px 0px 30px;" class="footerNav"><a href="#URL" target="_blank" style="color:#666666; text-decoration:none;">What's new</a></td>
+                    
+                    <td width="1" bgcolor="#666666" align="center" valign="top" style="font-family:Arial, sans-serif; font-size:1px; color: #f2f2f2;">&nbsp;</td>
+                    
+                    <!-- clearance -->
+                    <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; font-size:16px; line-height:19px; color: #666666; font-weight:normal; padding:0px 30px 0px 30px;" class="footerNav"><a href="#URL" target="_blank" style="color:#666666; text-decoration:none;">Clearance</a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            
+            <!-- Social -->
+            <tr>
+              <td align="center" style="padding:0px 0px 40px 0px;">
+                <table width="" align="center" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    
+                    <!-- facebook -->
+                    <td align="center" valign="top" style="padding:0px 10px 0px 0px;"><a href="#URL" target="_blank"><img src="http://media.4at5.net/email_domains/bbb/160900/social_fb.png" alt="" width="39" height="39" style="display: block; border-style:none;"></a></td>
+                    
+                    <!-- twitter -->
+                    <td align="center" valign="top" style="padding:0px 10px 0px 10px;"><a href="#URL" target="_blank"><img src="http://media.4at5.net/email_domains/bbb/160900/social_tw.png" alt="" width="39" height="39" style="display: block; border-style:none;"></a></td>
+                    
+                    <!-- pinterest -->
+                    <td align="center" valign="top" style="padding:0px 10px 0px 10px;"><a href="#URL" target="_blank"><img src="http://media.4at5.net/email_domains/bbb/160900/social_pi.png" alt="" width="39" height="39" style="display: block; border-style:none;"></a></td>
+                    
+                    <!-- instagram -->
+                    <td align="center" valign="top" style="padding:0px 10px 0px 10px;"><a href="#URL" target="_blank"><img src="http://media.4at5.net/email_domains/bbb/160900/social_in.png" alt="" width="39" height="39" style="display: block; border-style:none;"></a></td>
+                    
+                    <!-- youtube -->
+                    <td align="center" valign="top" style="padding:0px 0px 0px 10px;"><a href="#URL" target="_blank"><img src="http://media.4at5.net/email_domains/bbb/160900/social_yt.png" alt="" width="39" height="39" style="display: block; border-style:none;"></a></td>
+                    
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- end Social -->
+            
+            <!-- view in browser -->
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:16px; line-height:19px; color:#302B93; font-weight:bold; padding:0px 0px 24px 0px;" class="footerText"><a href="#URL" target="_blank" style="color:#302B93; text-decoration:none;">VIEW IN BROWSER <span style="font-size:21px;">&nbsp;&rsaquo;</span></a></td>
+            </tr>
+            <!-- end view in browser -->
+            
+            <!-- privacy policy / unsubscribe -->
+            <tr>
+              <td align="center" style="padding:0px 0px 40px 0px;">
+                <table align="center" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                   
+                    <!-- privacy policy -->
+                    <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:16px; line-height:19px; color: #302B93; font-weight:bold; padding:0px 30px 0px 30px; text-transform:uppercase;" class="footerNav">EMAIL PREFERENCES</td>
+                    
+                    <td width="1" bgcolor="#666666" align="center" valign="top" style="font-family:Arial, sans-serif; font-size:1px; color: #f2f2f2;">&nbsp;</td>
+                    
+                    <!-- unsubscribe -->
+                    <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Medium'; font-size:16px; line-height:19px; color: #302B93; font-weight:bold; padding:0px 30px 0px 30px; text-transform:uppercase;" class="footerNav"><a href="#URL" target="_blank" style="color:#302B93; text-decoration:none;">Unsubscribe</a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- end privacy policy / unsubscribe -->
+            
+          
+            <tr>
+              <td align="center" valign="top" style="font-family:'Century Gothic', CenturyGothic, Arial, sans-serif, 'Montserrat-Book'; font-size:12px; line-height:18px; color:#666666; font-weight:normal; padding:0px 10px 0px 10px;" class="footerText">This promotional email was sent to you by Bed Bath &amp; Beyond&reg; <br>
+                <br>
+Please add bedbathandbeyond@emailbedbathandbeyond.com to your address book <br>
+<br>
+If you received this email from a friend and would like to join our email list, <a href="#URL" target="_blank" style="color:#666666;">subscribe here</a>. <br>
+<br>
+<a href="#URL" target="_blank" style="color:#666666;">Privacy Policy</a> - Your Privacy Rights <br>
+<br>
+Please do not reply to this email, <a href="#URL" target="_blank" style="color:#666666;">contact us here</a>. <br>
+<br>
+&copy;2018 Bed Bath &amp; Beyond Inc. and its subsidiaries. All rights reserved. <br>
+<br>
+Corporate Headquarters - 650 Liberty Avenue, Union, New Jersey 07083 </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- end inner container / place all modules above -->
+
+  </td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- END FOOTER -->
+</table>
+<!-- END CONTAINER -->
+</body>
+</html>
